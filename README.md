@@ -30,22 +30,37 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+forEach operates on each item in an array while map operates on each item in a copy of the original array. forEach does not return anything (undefined) while map returns a new array.
+Map is preferred to foreEach in a case where'd you'd need to store the new values for a given reason.
+
 2. What is the difference between a function and a method?
+
+A method is a function that belongs to an object in JS. Methods are within the object scope. Functions can be in the object scope (as a method) or defined in the global scope.
 
 3. What is closure?
 
+A closure gives you access to an outer function's scope from an inner function. Closures are created every time a function is created.
+
 4. Describe the four rules of the 'this' keyword.
 
+* 1. Global/window binding, 'this' will be referring to the window / console object
+* 2. Implicit binding, if you're using a method on an object, 'this' is bound to that object and method 
+* 3. New binding, 'this' refers to the new object that is being created 
+* 4. Explicit binding, overriding what 'this' would point to. Happens when call or apply mehtods are used in JS 
+
 5. Why do we need super() in an extended class?
+
+Super calls the parent class, passing in the parameters of the extended class. We need super to apply the correct attributes / parameters to the parent class. Super also helps you avoid re-writing code that you've
+already written.
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on Github.
+- [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [X] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
 - [ ] You are now ready to build this project with your preferred IDE
 - [ ] Implement the project on your Branch, committing changes regularly.
